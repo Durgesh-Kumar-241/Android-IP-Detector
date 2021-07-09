@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/refresh"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:elevation="16dp"
+        android:layout_marginTop="85dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@drawable/cir"
+        android:drawableTop="@drawable/ic_baseline_refresh_24"
+        android:gravity="center"
+        android:text="Refresh"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/globalip454"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:background="@drawable/cir"
+        android:drawableTop="@drawable/ic_baseline_4g_mobiledata_24"
+        android:elevation="16dp"
+        android:gravity="center"
+        android:text="Global IP"
+        app:layout_constraintEnd_toEndOf="@+id/refresh"
+        app:layout_constraintStart_toStartOf="@+id/refresh"
+        app:layout_constraintTop_toBottomOf="@+id/localip" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:background="@drawable/cir"
+        android:drawableTop="@drawable/ic_baseline_wifi_24"
+        android:elevation="16dp"
+        android:gravity="center"
+        android:text="Local IP"
+        app:layout_constraintEnd_toEndOf="@+id/refresh"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/refresh"
+        app:layout_constraintTop_toBottomOf="@+id/refresh" />
+
+    <TextView
+        android:id="@+id/localip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="192.168.43.1"
+        app:layout_constraintEnd_toEndOf="@+id/refresh"
+        app:layout_constraintStart_toStartOf="@+id/refresh"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/globalip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:text="123.456.789.23"
+        app:layout_constraintEnd_toEndOf="@+id/refresh"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="@+id/refresh"
+        app:layout_constraintTop_toBottomOf="@+id/globalip454" />
+</androidx.constraintlayout.widget.ConstraintLayout>
